@@ -22,7 +22,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dirack's Lounge na Web</title>
+<title>Dirack's Lounge</title>
+
+<!--{ Ícone do site }-->
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.ico" />
 
 <!-- CSS's mobile é adaptado para tela de celular, lounge.css é para o computador-->
 <link type="text/css" rel="stylesheet" href="mobile.css" media="screen and (max-device-width: 481px) and (orientation: portrait)">
@@ -30,232 +35,95 @@
 <link type="text/css" rel="stylesheet" href="lounge.css" media="screen and (min-device-width: 640px)">
 </head>
 
-<body>
+<body> 
 
-<!--<div id="premio">
-	<img src="images/premio.png" alt="premio">
-</div>-->
- 
- <!--<!-- Antes da Barra com o logo, Home Page é um link para pular o banner do site   
-<div id="barrinha">
-    <p><a id="home" href="index.html#homebotao" title="Ir para Home?">Home Page</a></p>
-</div>-->
+	<!-- Menu de Navegação principal do site-->
+	<!-- Classe selected são os botões do menu de navegação -->
+	<nav>
+		<ul id="homebotao">
+		<li class="selected"><a href="index.html" background="#a0a0a0">HOME</a></li>
+		<li class="selected"><a href="artigos/artigos.html">BLOG</a></li>
+		<li class="selected"><a href="tutoriais.html">TUTORIAIS</a></li>
+		<li class="selected"><a href="about/contato.html">REDES SOCIAIS</a></li>
+		<li class="selected"><a href="about/bibliografia.html">BIOGRAFIA</a></li>
+		<li class="selected"><a href="jogos/listajogos.html">JOGOS</a></li>
+		<li>
+			<!-- Buscador freefind search box html -->
+			<form id="busca" style="margin:0px 0px 0px 150px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+					<input type="hidden" name="si" value="58715449">
+					<input type="hidden" name="pid" value="r">
+					<input type="hidden" name="n" value="0">
+					<input type="hidden" name="_charset_" value="">
+					<input type="hidden" name="bcd" value="&#247;">
+					<input type="text" name="query" size="15"> 
+					<input id="botao" type="submit" value="Pesquisar">
+			</form>
+		</li>
+		</ul>
+		
+	</nav>
 
-<div id="cabecalho">    
-<!--Barra branca com o logo Dirack's Lounge, Let's code como background -->   
-<div id="preheader">
- 
-</div>
-<!-- Menu de Navegação principal do site-->
-<!-- Classe selected são os botões do menu de navegação -->
-<nav>
-<ul id="homebotao">
-<li class="selected"><a href="index.html">HOME</a></li>
-<li class="selected"><a href="artigos/artigos.html">BLOG</a></li>
-<li class="selected"><a href="banco/banco.html">TUTORIAIS</a></li>
-<li class="selected"><a href="about/contato.html">REDES SOCIAIS</a></li>
-<li class="selected"><a href="about/bibliografia.html">BIOGRAFIA</a></li>
-<li class="selected"><a href="jogos/listajogos.html">JOGOS</a></li>
-<!--<li class="selected"><a href="chat/index.html">CHAT</a></li>  Fórum do site -->
-</ul>
-</nav>
-</div>
-
-<!-- Banner, imagem de um casal de robôs em azul -->
-<div id="header">
-<br>
-<br>
-<br>
-<div id="titulo">
-
-</div>
+<!-- Foto do Planeta TERRA: Barra entre o menu de navegação e o corpo da página --> 
+<div id="preheader">	
+	 
 </div>
 
-
-
-<!-- Barra lateral à direita, fica o formulário de emails em azul e as últimas atualizações-->
+<!-- Barra lateral à direita -->
 <div id="posts">
 
-<div id="buscador">
+	<h3>Bem Vindo ao Dirack's Lounge</h3>
 
-<h3>Buscar na página:</h3>    
-<!--<script>
-  (function() {
-    var cx = '006527784777711515776:x9padjnt1w0';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>-->
+	<p>Nossa missão é compartilhar conhecimento sobre programação apliaca à Geofísica. 
+	Fornecemos vários minicursos e tutoriais de programação em FORTRAN, Python, c/c++, Java, 
+	Shell Script e sobre o pacote de para  processamento sísmico, 
+	Madagascar (Confira na aba Tutoriais no menu de navegação).
+	</p>
+	<p>Este projeto, liderado pelo grupo de programação apliacada à geofísica (GPGEOF) 
+	e surgiu da necessidade dos estudantes de Geofísica da Universidade Federal 
+	do Pará (UFPA) aperfeiçoarem seus conhecimentos em programação.
+	Conta com um canal de divulgação científica no Youtube, o Geofisicando.</p>
 
-<!-- start of freefind search box html -->
-<table cellpadding=0 cellspacing=0 border=0 >
-<tr>
-	<td  colspan=2 style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
-		<form style="margin:0px; margin-top:4px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
-		<input type="hidden" name="si" value="58715449">
-		<input type="hidden" name="pid" value="r">
-		<input type="hidden" name="n" value="0">
-		<input type="hidden" name="_charset_" value="">
-		<input type="hidden" name="bcd" value="&#247;">
-		<input type="text" name="query" size="15"> 
-		<input type="submit" value="search">
-		</form>
-	</td>
-</tr>
-<tr>
-	<td style="text-align:left; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
-		<a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" >site search</a><a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" > by
-		<span style="color: #606060;">freefind</span></a>
-	</td>
+	<br>
+	<h3 id="formulario">Enviar email para Rodolfo Dirack:</h3>
 
-	<td style="text-align:right; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
-		<a href="https://search.freefind.com/find.html?si=58715449&amp;pid=a">advanced</a>
-	</td>
-</tr>
-</table>
-<!-- end of freefind search box html -->
-
-
-</div>
-
-<h3 id="formulario">Enviar email para Rodolfo Dirack:</h3>
-
-<form id="mail" method="post" action="about/send_mail.php">
-<fieldset>
-    <p>
-    <label>Nome:
-    <input class="campo_nome" type="text" name="first_name" required>
-    </label> 
-    </p>
-    <p>
-    <label>Email: 
-    <input class="campo_email" type="email" name="email_address">
-    </label>
-    </p>
-    <p>
-    <label>Mensagem:
-    <textarea class="msg" name="comments" maxlength="500" rows="10" cols="38"></textarea>
-    </label>
-    </p>
-    <p><button class="bnt_submit">Enviar</button></p>
-</fieldset>
-</form>
+	<form style="padding: 10px 50px 10px 60px;" id="mail" method="post" action="about/send_mail.php">
+		<fieldset>
+		    <p>
+		    <label>Nome:
+		    <input class="campo_nome" type="text" name="first_name" required>
+		    </label> 
+		    </p>
+		    <p>
+		    <label>Email: 
+		    <input class="campo_email" type="email" name="email_address">
+		    </label>
+		    </p>
+		    <p>
+		    <label>Mensagem:
+		    <textarea class="msg" name="comments" maxlength="500" rows="10" cols="38"></textarea>
+		    </label>
+		    </p>
+		    <p><button class="bnt_submit">Enviar</button></p>
+		</fieldset>
+	</form>
     
-<br>
-<h3>Últimas Atualizações:</h3>
-
-<p>
-29/10/18<br> <a class="links" href="exercicios-2.zip" download="exercicios-2.zip" title="exercicios"> Exercício 2 </a> Exercício de Shell Script profissional do básico ao avançado.
-</p>
-
-<p>
-25/10/18<br> <a class="links" href="exercicio.zip" download="exercicio.zip" title="exercicios"> Exercício </a> Exercício de Shell Script profissional do básico ao avançado.
-</p>
-
-<p>
-16/10/18<br> <a class="links" href="lista.html" title="Lista de chamada"> Lista de chamada</a> Lista de frequência do curso Shell Script profissional do básico ao avançado.
-</p>
-
-<p>
-04/04/18<br> <a class="links" href="codigos/format.zip" download="format.zip" title="Baixar?"> format.zip</a> Estudo sobre o comando FORMAT em FORTRAN.
-</p>
-
-<p>
-26/04/2018<br> <a class="links" href="codigos/iostat.html" title="Ler mais?"> Iostat</a> Aprenda a abrir e ler arquivos da maneira correta no FORTRAN.
-</p>
-
-<p>
-24/04/2018<br> <a class="links" href="codigos/makefile.html" title="Ler mais?"> Makefile</a> Aprenda a compilar facilmente seus códigos em FORTRAN com arquivos Makefile.
-</p>
-
-<p>
-23/04/18<br> <a class="links" href="codigos/questao4.html" title="Programa questao4.f90"> questao4.f90</a> Resolução da questão 4 da Lista 1 de programação básica em FORTRAN.
-</p>
-
-<!--
-<p>
-23/04/18<br> <a class="links" href="codigos/questao3.html" title="Programa questao3.f90"> questao3.f90</a> Resolução da questão 3 da Lista 1 de Programação básica em FORTRAN.
-</p>
-
-<p>
-23/04/18<br> <a class="links" href="codigos/questao2.html" title="Programa questao2.f90"> questao2.f90</a> Resolução da questão 2 da Lista 1 de FORTRAN.
-</p>
-
-
-<p>
-19/04/18<br> <a class="links" href="codigos/questao1.html" title="Programa questao1.f90"> questao1.f90</a> Resolução da primeira questão da Lista de FORTRAN básico.
-</p>
-
-
-<p>
-13/04/18<br> <a class="links" target="_blank" href="codigos/concatena.html" title="Programa concatena.f90"> concatena.f90</a> Concatenar dois arquivos com uma coluna de números em cada um..
-</p>
-
-
-<p>
-11/04/18<br> <a class="links" href="codigos/fortran2shell.html" title="Programa fortran2shell.f90"> fortran2shell.f90</a> Aprender a passar argumentos para o programa em FORTRAN pela linha de comandos do Shell.
-</p>
-	
-
-<p>
-11/04/18<br> <a class="links" href="codigos/media2.html" title="Programa media2.f90"> media2.f90</a> Gerar a média aritmética de valores lidos de um arquivo.
-</p>
-
-
-<p>
-07/04/2018<br> <a class="links" href="codigos/Lista1.zip" download="Lista1.zip" title="Baixar livro Lista1.pdf"> Lista1.pdf</a> Lista 1 de programação em FORTRAN.
-</p>
-
-
-<p>
-06/04/18<br> <a class="links" target="_blank" href="codigos/tipos_funcoes.html" title="Programa tipos_funcoes.f90"> tipos_funcoes.f90</a> Exemplifica a utilização de funções com tipos derivados..
-</p>
-
-
-<p>
-06/04/2018<br> <a class="links" target="_blank" href="codigos/case.html" title="Programa tipos.f90"> tipos.f90</a> Aprenda a usar ponteiros e tipos derivados no Fortran 90.
-</p>
-
-<p>
-06/04/2018<br> <a class="links" target="_blank" href="codigos/case.html" title="Programa case.f90"> case.f90</a> Motar um menu de opções com SELECT CASE no Fortran 90.
-</p>-->
-
 </div>
 
 
-<!-- Folha de texto à esquerda, onde ficam os artigos desenvolvidos no site e links para códigos -->
-<!--
-        Cada artigo tem uma imagem da classe thumb que significa:
-            -fortran.png (códigos de Fortran básico)
-            -fortran_avancado.png (códigos de fortran avançado)
-            -c++.png (códigos em c++)
-            -shell_script.png (códigos em shell script)
-
--->
-
+<!-- Folha de texto à esquerda, onde fica um vídeo e posts recentes -->
 <div id="canvas" >
 
-<h1>Bem Vindo ao Dirack's Lounge</h1>
-
-<p>Seja bem vindo ao Dirack's Lounge! Nossa missão é ensinar programação e compartilhar conhecimento sobre Geofísica na web fornecendo vários minicursos de programação em FORTRAN, Python, c/c++, Java, Shell Script, e de softwares utilizados pelos estudantes de Geofísica como o MADAGASCAR (Confira na aba MINICURSOS no menu de navegação).</p>
-<p>Nosso projeto surgiu da necessidade dos estudantes de Geofísica da Universidade Federal do Pará (UFPA) aperfeiçoarem seus
-conhecimentos em programação e para divulgar a nossa amada ciência Geofísica!
-Se você é novo aqui, não deixe de se inscrever no nosso canal de divulgação científica no Youtube, o <a target="_blank" href="https://www.youtube.com/channel/UCi5XD5PCQtPrIRD0H_GJvag" title="Conhecer o Geofisicando?">Geofisicando.</a> Esse projeto é liderado por Rodolfo Dirack e você pode conhecê-lo melhor clicando na aba BIOGRAFIA no menu de navegação.</p>
-
-<h1>Geofisicando: Nosso canal no Youtube</h1><br>
-
-<div id="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F2Fexi5MkU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Vídeo de apresentação do canal Geofisicando e do site -->
+<br>
+<div id="video" style="margin-right: 125px;">
+	<p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Ht5yV3zGfuw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
 </div>
 
 <br>
 <br>
-<h1>Posts recentes:</h1>
+<h2>Posts recentes:</h2>
 
 <!-- EXERCICIO 2 DO CURSO SHELL SCRIPT -->
 <div>

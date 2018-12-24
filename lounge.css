@@ -1,19 +1,23 @@
 /* CSS para tela de computador do Dirack's Lounge
 
     Programador: Rodolfo A. C. Neves 15/04/2018
+
     Email: rodolfo_profissional@hotmail.com
     
     Utilizada nas páginas principais do site, uma coluna principal à
     esquerda e uma barra lateral à direita. 
     
-    Layout exclusivo de index.html:
-    O cabeçalho são três linhas, a primeira com um link à direita (Home Page)
-    a segunda linha é uma barra branca com o logo Dirack's Lounge Let's code
-    e a terceira é uma imagem de um casal de robôs em azul (Banner)
+    Layout de index.html:
+	    O cabeçalho da página são duas divs, a primeira
+	    é uma barra branca com o logo Dirack's Lounge Let's code
+	    e a terceira é uma imagem de um laptop (Banner)
+
+	    O corpo é dividido em duas barras laterais (esquerda e direita)
+	    E um rodapé no final da página.
     
     As outras páginas são variações desse mesmo layout básico
-    
-    Ás páginas de código e artigos utilizarão outra CSS, coluna.css
+
+    Licensa: http://www.dirackslounge.online/licensa.html
     
 */
 
@@ -93,49 +97,31 @@ fieldset
     padding: 0px 0px 0px 80px;
 }
 
-/* Banner */
-#barrinha {
-    background-image: url(images/androide.jpg);
-    background-color: black;
-    text-align: right;
-    padding: 20px 20px 30px 0px;
-    height: 20px;
-    margin: 0px;
-    color: white;
-}
-
-/* Barra branca com o logo do Dirack's Lounge como background*/
+/* Barra com imagem do planeta Terra */
 #preheader {
-    text-align: right;
-    background-image: url(images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: white;
-    height: 120px;
+    background-image: url(images/banner.png);
+    background-position: top;
+    height: 200px;
     padding: 0px 20px 10px 50px;
     margin: 0px;
-    /*border: 2px solid black;*/
 }
-
-/*
-canvas {
-				position: absolute;
-				top: 0px;
-				bottom: 0px;
-				left: 0px;
-				right: 0px;
-				margin: auto;
-			}
-*/
 
 /* Alinhar fotos da página contato.html */
 #fotos {
     text-align:center;
 }
 
-/* Menu de navegação flutuação */
+/* BOTÃO Menu de navegação flutuação */
 li.selected:hover{
-    background: #7E7A8C;
+    background-image: linear-gradient(to bottom, #cf2b4f, #bdb1c2);
+    border-radius: 5px;
+}
+
+
+
+/* BOTÃO Menu de navegação flutuação */
+li.atual{
+    background: #bdb1c2;
 }
 
 #navegacao {
@@ -144,10 +130,12 @@ li.selected:hover{
 
 /* Menu de navegação #053447*/
 nav {
-    background-color: #8C6262;
+    background-image: linear-gradient(to bottom, #545454, #000000);
     margin: 0px 0px 0px 0px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    width: 1355px;
+    position: fixed;
+    /*border-bottom: 2px solid black;
+    border-top: 2px solid black;*/
 }
 
 nav ul {
@@ -161,15 +149,29 @@ nav ul li {
     padding: 5px 20px 5px 20px;
 }
 
+nav ul li form {
+    display: inline;
+    padding: 5px 20px 5px 20px;
+}
+
+nav ul li form {
+	background-image: linear-gradient(to bottom, #545454, #000000);
+}
+
+#botao {
+	background-image: linear-gradient(to bottom, #00a000, #00a000);
+	color: white;
+}
+
 #navegacao ul {
     margin: 0px;
     list-style-type: none;
-    padding: 5px 20px 5px 20px;
+    padding: 0px 20px 5px 20px;
 }
 
 #navegacao ul li{
         display: inline;
-        padding: 5px 2px 5px 2px;
+        padding: 0px 2px 5px 2px;
         margin: 0px 10px 0px 0px;
 }
 
@@ -187,18 +189,18 @@ nav ul li a:link, nav ul li a:visited {
 
 /* Botões de navegação #0F92C6*/
 nav ul li.selected {
-    background-color: #3F2626;
+    background-image: linear-gradient(to bottom, #545454, #000000);
     border-radius: 5px;
 }
 
 #cabecalho {
-    position: fixed;
     width: 1355px;
 }
 
 /* fonte dos títulos */
 h1, h2, h3 {
     font-family: sans-serif;
+    color: #005eff;
 }
 
 /* Fonte dos códigos */
@@ -219,8 +221,6 @@ h1 {
 body {
     text-indent: 30px;
     text-align: justify;
-    /*background: #053447 3F2626 url(images/trace.jpg);*/
-    /*background: #aaa;*/
     margin: 0px;
     font-family: Verdana, sans-serif;
     padding: 0px;
@@ -228,6 +228,7 @@ body {
 
 body p {
     font-size: large;
+    color: #191919;
 }
 
 #perfil {
@@ -247,55 +248,32 @@ body p {
     font-size: 390%;
 }
 
-/* Banner */
-#header {
-    text-align: right;
-    background: url(images/laptop2.jpg);
-    /*background-repeat: repeat;*/
-    margin: 0px 0px 0px 0px;
-    padding: 20px 20px 0px 0px;
-    height: 780px;
-    color: #44a2c6;
-    border-bottom: 4px solid black;
-}
-
 /* folha de texto à esquerda com as postagens e artigos*/
 #canvas {
     text-indent: 30px;
     background: white top left;
     padding: 20px 30px 0px 50px;
-    margin: 10px 425px 20px 60px;
-    color: #053447;
+    margin: 10px 425px 20px 30px;
+    color: #191919;
     text-align: justify;
-    /*border: 2px solid black;
-    /*border-left: solid black;
-    border-right: solid black;
-    
-    border-radius: 15px;*/
 }
 
 /* Barra lateral à esquerda com formulário de email e atualizações*/
 #posts {
     background: white top left;
-    color: #053447;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
-    margin: 10px 90px 0px 10px;
-    width: 290px;
+    margin: 10px 25px 0px 10px;
+    width: 400px;
     float: right;
-     /*border: 2px solid black;
-    border-left: solid black;
-    border-right: solid black;*/
 }
 
 /* Rodapé da página */
 #rodape {
     text-align: center;
-    background-color: #8C6262;
+    background-image: linear-gradient(to bottom, #545454, #000000);
     color: white;
     margin: 0px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
     padding: 20px;
     clear: right;
 }
@@ -343,4 +321,8 @@ blockquote {
     padding: 50px 0px 10px 10px;
     color: white;
     text-indent: 0px;
+}
+
+#busca input{
+	border-radius: 20px;
 }
