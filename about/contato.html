@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Redes Sociais</title>
+<link type="text/css" rel="stylesheet" href="../mobile.css" media="screen and (max-device-width: 481px) and (orientation: portrait)">
+<link type="text/css" rel="stylesheet" href="../mobile.css" media="screen and (max-device-height: 640px) and (orientation: landscape)">
+<link type="text/css" rel="stylesheet" href="../lounge.css" media="screen and (min-device-width: 1200px)">
+
+<script type="text/javascript">
+    i=1;
+    max=6;
+    
+    function slideShow() {
+        i++;
+        newValue = "../images/img"+i+".jpg";
+        
+        if (i > max){
+            i=1;
+            document.getElementById("slide").src = "../images/img1.jpg";
+        }
+        
+        else {
+            
+        document.getElementById("slide").src = newValue; 
+        
+        }
+    }
+    
+    
+</script>
+</head>
+
+<body onload="setInterval('slideShow()',2000);">
+
+<div id="header">
+<br>
+<br>
+<br>
+<div id="titulo"><h1>REDES<br> SOCIAIS</h1></div>
+</div>
+
+<nav>
+<ul>
+	<li class="selected"><a href="../index.html#homebotao" title="Voltar à pagina inicial?">HOME</a></li>
+</ul>
+</nav>
+
+<div id="posts">
+<div id="perfil">
+<br>
+<img src="../images/logo.jpg" alt="Foto de perfil de Rodolfo Dirack"  >
+<h3>Dirack's Lounge</h3>
+</div>
+</div>
+
+<div id="canvas">
+ <br>   
+<div id="fotos">
+<!--<h1>Entre em contato com Rodolfo Dirack</h1>-->
+
+
+
+<img id="slide" src="../images/img1.jpg"  alt="Foto de perfil de Rodolfo Dirack" width="400" height="400" >
+
+</div>
+<h3>Me procure diretamente nas minhas redes sociais, telefone ou email:</h3>
+
+<a target="_blank" href="https://www.facebook.com/rodolfo.neves.925" title="Ir para o facebook de Rodolfo Dirack?"><img src="../images/face.png" alt="Logo facebook" width="40" height="40"></a><img src="../images/zap.png" alt="Logo whatsapp" width="40" height="40"><img src="../images/mail.png" alt="Logo email" width="40" height="40">
+
+<ul>
+    <li><img src="../images/face.png" alt="Logo facebook" width="40" height="40">Facebook: <a target="_blank" href="https://www.facebook.com/rodolfo.neves.925" title="Ir para o facebook de Rodolfo Dirack?">Rodolfo Dirack</a></li><br>
+    <li>Whatsapp: (91)982606611 (Somente em casos muito importantes!)</li><br>
+    <li>Email: rodolfo_profissional@hotmail.com</li><br>
+</ul>
+
+<a target="_blank" href="https://www.facebook.com/rodolfo.neves.925" title="Ir para o facebook de Rodolfo Dirack?"><img src="../images/face.png" alt="Logo facebook" width="40" height="40"></a><img src="../images/zap.png" alt="Logo whatsapp" width="40" height="40"><img src="../images/mail.png" alt="Logo email" width="40" height="40">
+
+
+</div>
+
+
+<div id="rodape">
+&copy; 2018, Rodolfo Dirack. Todos os direitos reservados.
+</div>
+
+
+</body>
+</html>
