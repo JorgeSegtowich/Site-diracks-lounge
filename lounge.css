@@ -200,6 +200,7 @@ nav ul li.selected {
 /* fonte dos títulos */
 h1, h2, h3 {
     font-family: sans-serif;
+    color: #005eff;
 }
 
 /* Fonte dos códigos */
@@ -227,6 +228,7 @@ body {
 
 body p {
     font-size: large;
+    color: #191919;
 }
 
 #perfil {
