@@ -1,0 +1,520 @@
+<!doctype html>
+<!--
+    Página Principal do site Dirack's Lounge: HOME
+    
+    Objetivo: Site para a divulgação de códigos fonte de programação para
+    as turmas de Geofísica da UFPA (Repositório de códigos) e para o ensino
+    da programação.
+    
+    Linguagens ensinadas:
+    
+        -C/C++
+        -Python
+        -Java
+        -Shell Script
+        -Fortran
+    
+    Autor: Rodolfo A. C. Neves  15/03/2018
+	
+	Email: rodolfo_profissional@hotmail.com
+
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dirack's Lounge na Web</title>
+
+<!-- CSS's mobile é adaptado para tela de celular, lounge.css é para o computador-->
+<link type="text/css" rel="stylesheet" href="mobile.css" media="screen and (max-device-width: 481px) and (orientation: portrait)">
+<link type="text/css" rel="stylesheet" href="mobile.css" media="screen and (max-device-width: 640px) and (orientation: landscape)">
+<link type="text/css" rel="stylesheet" href="lounge.css" media="screen and (min-device-width: 640px)">
+</head>
+
+<body>
+
+<!--<div id="premio">
+	<img src="images/premio.png" alt="premio">
+</div>-->
+ 
+ <!--<!-- Antes da Barra com o logo, Home Page é um link para pular o banner do site   
+<div id="barrinha">
+    <p><a id="home" href="index.html#homebotao" title="Ir para Home?">Home Page</a></p>
+</div>-->
+
+<div id="cabecalho">    
+<!--Barra branca com o logo Dirack's Lounge, Let's code como background -->   
+<div id="preheader">
+ 
+</div>
+<!-- Menu de Navegação principal do site-->
+<!-- Classe selected são os botões do menu de navegação -->
+<nav>
+<ul id="homebotao">
+<li class="selected"><a href="index.html">HOME</a></li>
+<li class="selected"><a href="artigos/artigos.html">BLOG</a></li>
+<li class="selected"><a href="banco/banco.html">TUTORIAIS</a></li>
+<li class="selected"><a href="about/contato.html">REDES SOCIAIS</a></li>
+<li class="selected"><a href="about/bibliografia.html">BIOGRAFIA</a></li>
+<li class="selected"><a href="jogos/listajogos.html">JOGOS</a></li>
+<!--<li class="selected"><a href="chat/index.html">CHAT</a></li>  Fórum do site -->
+</ul>
+</nav>
+</div>
+
+<!-- Banner, imagem de um casal de robôs em azul -->
+<div id="header">
+<br>
+<br>
+<br>
+<div id="titulo">
+
+</div>
+</div>
+
+
+
+<!-- Barra lateral à direita, fica o formulário de emails em azul e as últimas atualizações-->
+<div id="posts">
+
+<div id="buscador">
+
+<h3>Buscar na página:</h3>    
+<!--<script>
+  (function() {
+    var cx = '006527784777711515776:x9padjnt1w0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>-->
+
+<!-- start of freefind search box html -->
+<table cellpadding=0 cellspacing=0 border=0 >
+<tr>
+	<td  colspan=2 style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
+		<form style="margin:0px; margin-top:4px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+		<input type="hidden" name="si" value="58715449">
+		<input type="hidden" name="pid" value="r">
+		<input type="hidden" name="n" value="0">
+		<input type="hidden" name="_charset_" value="">
+		<input type="hidden" name="bcd" value="&#247;">
+		<input type="text" name="query" size="15"> 
+		<input type="submit" value="search">
+		</form>
+	</td>
+</tr>
+<tr>
+	<td style="text-align:left; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
+		<a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" >site search</a><a style="text-decoration:none; color:gray;" href="https://www.freefind.com"  rel="nofollow" > by
+		<span style="color: #606060;">freefind</span></a>
+	</td>
+
+	<td style="text-align:right; font-family: Arial, Helvetica, sans-serif;	font-size: 7.5pt; padding-top:4px;">
+		<a href="https://search.freefind.com/find.html?si=58715449&amp;pid=a">advanced</a>
+	</td>
+</tr>
+</table>
+<!-- end of freefind search box html -->
+
+
+</div>
+
+<h3 id="formulario">Enviar email para Rodolfo Dirack:</h3>
+
+<form id="mail" method="post" action="about/send_mail.php">
+<fieldset>
+    <p>
+    <label>Nome:
+    <input class="campo_nome" type="text" name="first_name" required>
+    </label> 
+    </p>
+    <p>
+    <label>Email: 
+    <input class="campo_email" type="email" name="email_address">
+    </label>
+    </p>
+    <p>
+    <label>Mensagem:
+    <textarea class="msg" name="comments" maxlength="500" rows="10" cols="38"></textarea>
+    </label>
+    </p>
+    <p><button class="bnt_submit">Enviar</button></p>
+</fieldset>
+</form>
+    
+<br>
+<h3>Últimas Atualizações:</h3>
+
+<p>
+29/10/18<br> <a class="links" href="exercicios-2.zip" download="exercicios-2.zip" title="exercicios"> Exercício 2 </a> Exercício de Shell Script profissional do básico ao avançado.
+</p>
+
+<p>
+25/10/18<br> <a class="links" href="exercicio.zip" download="exercicio.zip" title="exercicios"> Exercício </a> Exercício de Shell Script profissional do básico ao avançado.
+</p>
+
+<p>
+16/10/18<br> <a class="links" href="lista.html" title="Lista de chamada"> Lista de chamada</a> Lista de frequência do curso Shell Script profissional do básico ao avançado.
+</p>
+
+<p>
+04/04/18<br> <a class="links" href="codigos/format.zip" download="format.zip" title="Baixar?"> format.zip</a> Estudo sobre o comando FORMAT em FORTRAN.
+</p>
+
+<p>
+26/04/2018<br> <a class="links" href="codigos/iostat.html" title="Ler mais?"> Iostat</a> Aprenda a abrir e ler arquivos da maneira correta no FORTRAN.
+</p>
+
+<p>
+24/04/2018<br> <a class="links" href="codigos/makefile.html" title="Ler mais?"> Makefile</a> Aprenda a compilar facilmente seus códigos em FORTRAN com arquivos Makefile.
+</p>
+
+<p>
+23/04/18<br> <a class="links" href="codigos/questao4.html" title="Programa questao4.f90"> questao4.f90</a> Resolução da questão 4 da Lista 1 de programação básica em FORTRAN.
+</p>
+
+<!--
+<p>
+23/04/18<br> <a class="links" href="codigos/questao3.html" title="Programa questao3.f90"> questao3.f90</a> Resolução da questão 3 da Lista 1 de Programação básica em FORTRAN.
+</p>
+
+<p>
+23/04/18<br> <a class="links" href="codigos/questao2.html" title="Programa questao2.f90"> questao2.f90</a> Resolução da questão 2 da Lista 1 de FORTRAN.
+</p>
+
+
+<p>
+19/04/18<br> <a class="links" href="codigos/questao1.html" title="Programa questao1.f90"> questao1.f90</a> Resolução da primeira questão da Lista de FORTRAN básico.
+</p>
+
+
+<p>
+13/04/18<br> <a class="links" target="_blank" href="codigos/concatena.html" title="Programa concatena.f90"> concatena.f90</a> Concatenar dois arquivos com uma coluna de números em cada um..
+</p>
+
+
+<p>
+11/04/18<br> <a class="links" href="codigos/fortran2shell.html" title="Programa fortran2shell.f90"> fortran2shell.f90</a> Aprender a passar argumentos para o programa em FORTRAN pela linha de comandos do Shell.
+</p>
+	
+
+<p>
+11/04/18<br> <a class="links" href="codigos/media2.html" title="Programa media2.f90"> media2.f90</a> Gerar a média aritmética de valores lidos de um arquivo.
+</p>
+
+
+<p>
+07/04/2018<br> <a class="links" href="codigos/Lista1.zip" download="Lista1.zip" title="Baixar livro Lista1.pdf"> Lista1.pdf</a> Lista 1 de programação em FORTRAN.
+</p>
+
+
+<p>
+06/04/18<br> <a class="links" target="_blank" href="codigos/tipos_funcoes.html" title="Programa tipos_funcoes.f90"> tipos_funcoes.f90</a> Exemplifica a utilização de funções com tipos derivados..
+</p>
+
+
+<p>
+06/04/2018<br> <a class="links" target="_blank" href="codigos/case.html" title="Programa tipos.f90"> tipos.f90</a> Aprenda a usar ponteiros e tipos derivados no Fortran 90.
+</p>
+
+<p>
+06/04/2018<br> <a class="links" target="_blank" href="codigos/case.html" title="Programa case.f90"> case.f90</a> Motar um menu de opções com SELECT CASE no Fortran 90.
+</p>-->
+
+</div>
+
+
+<!-- Folha de texto à esquerda, onde ficam os artigos desenvolvidos no site e links para códigos -->
+<!--
+        Cada artigo tem uma imagem da classe thumb que significa:
+            -fortran.png (códigos de Fortran básico)
+            -fortran_avancado.png (códigos de fortran avançado)
+            -c++.png (códigos em c++)
+            -shell_script.png (códigos em shell script)
+
+-->
+
+<div id="canvas" >
+
+<h1>Bem Vindo ao Dirack's Lounge</h1>
+
+<p>Seja bem vindo ao Dirack's Lounge! Nossa missão é ensinar programação e compartilhar conhecimento sobre Geofísica na web fornecendo vários minicursos de programação em FORTRAN, Python, c/c++, Java, Shell Script, e de softwares utilizados pelos estudantes de Geofísica como o MADAGASCAR (Confira na aba MINICURSOS no menu de navegação).</p>
+<p>Nosso projeto surgiu da necessidade dos estudantes de Geofísica da Universidade Federal do Pará (UFPA) aperfeiçoarem seus
+conhecimentos em programação e para divulgar a nossa amada ciência Geofísica!
+Se você é novo aqui, não deixe de se inscrever no nosso canal de divulgação científica no Youtube, o <a target="_blank" href="https://www.youtube.com/channel/UCi5XD5PCQtPrIRD0H_GJvag" title="Conhecer o Geofisicando?">Geofisicando.</a> Esse projeto é liderado por Rodolfo Dirack e você pode conhecê-lo melhor clicando na aba BIOGRAFIA no menu de navegação.</p>
+
+<h1>Geofisicando: Nosso canal no Youtube</h1><br>
+
+<div id="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F2Fexi5MkU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<br>
+<br>
+<h1>Posts recentes:</h1>
+
+<!-- EXERCICIO 2 DO CURSO SHELL SCRIPT -->
+<div>
+	<a href="exercicios-2.zip" download="exercicios-2.zip" title="exercicio"><img class="thumb" align="left" src="thumbs/shell.png" alt="Linux user" border=0></a>
+	<h3><a href="exercicios-2.zip" download="exercicios-2.zip" title="exercicio"> Exercício 2 Shell Script</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 29/10/2018</small></p>
+	<p id="descricao">Exercício 2 do curso Shell Script profissional do básico ao avançado.</p>
+</div>
+<br>
+
+<!-- EXERCICIO DO CURSO SHELL SCRIPT -->
+<div>
+	<a href="exercicio.zip" download="exercicio.zip" title="exercicio"><img class="thumb" align="left" src="thumbs/shell.png" alt="Linux user" border=0></a>
+	<h3><a href="exercicio.zip" download="exercicio.zip" title="exercicio"> Exercício Shell Script</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 25/10/2018</small></p>
+	<p id="descricao">Exercício do curso Shell Script profissional do básico ao avançado.</p>
+</div>
+<br>
+
+<!-- LISTA DE CHAMADA DO CURSO SHELL SCRIPT -->
+<div>
+	<a href="lista.html" title="Lista de chamada"><img class="thumb" align="left" src="thumbs/shell.png" alt="Linux user" border=0></a>
+	<h3><a href="lista.html" title="Lista de chamada"> Curso Shell Script (Lista de frequência)</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 16/10/2018</small></p>
+	<p id="descricao">Lista de frequência do curso Shell Script profissional do básico ao avançado.</p>
+</div>
+<br>
+
+<!-- IOSTAT -->
+<div>
+	<a href="codigos/iostat.html" title="Ler mais sobre iostat?"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0></a>
+	<h3><a href="codigos/iostat.html" title="Ler mais sobre iostat?"> Leitura e abetura correta de arquivos com iostat</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 26/04/2018</small></p>
+	<p id="descricao">O comando <em>iostat</em> é uma maneira elegante de identificar as condições de erro de leitura e abertura de arquivos quando utilizado junto com os comandos OPEN e READ em Fortran. Deve ser adotado como padrão para programas que necessitam de <em>input</em> de arquivos.</p>
+</div>
+<br>
+
+<!-- Makefile -->
+<div>
+	<a href="codigos/makefile.html" title="aprender sobre makefile?"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" ></a>
+	<h3><a href="codigos/makefile.html" title="aprender sobre makefile??"> Compilação facilitada com arquivos Makefile</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 24/04/2018</small></p>
+	<p id="descricao">Os arquivos Makefile facilitam muito a compilação de seus códigos em FORTRAN. Você pode substituir todos aqueles <em>gfortran's -c</em> por apenas um único comando <em>make</em> no terminal, o que será muito útil quando tivermos mais de um programa em FORTRAN para compilar, ou módulos de funções em códigos fontes separados.</p>
+</div>
+<br>
+
+<!-- Questao4.f90 (Fortran básico) -->	
+<div>
+<a href="codigos/questao4.html" title="programa questao4.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+<h3><a href="codigos/questao4.html" title="programa questao4.f90"> questao4.f90</a></h3>
+<p><small>Por <em>Rodolfo Dirack</em> em 23/04/18</small></p>
+<p id="descricao">Resolução da questão 4 da Lista 1 de programação básica em FORTRAN.</p>
+
+</div><br>
+
+
+<!-- Questao3.f90 (Fortran básico) -->	
+<div>
+<a href="codigos/questao3.html" title="programa questao3.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+<h3><a href="codigos/questao3.html" title="programa questao3.f90"> questao3.f90</a></h3>
+<p><small>Por <em>Rodolfo Dirack</em> em 23/04/18</small></p>
+<p id="descricao">Resolução da questão 3 da Lista 1 de Programação básica em FORTRAN.</p>
+
+</div><br>
+
+
+
+<!-- Questao2.f90 (Fortran básico) -->	
+<div>
+<a href="codigos/questao2.html" title="programa questao2.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+<h3><a href="codigos/questao2.html" title="programa questao2.f90"> questao2.f90</a></h3>
+<p><small>Por <em>Rodolfo Dirack</em> em 23/04/18</small></p>
+<p id="descricao">Resolução da questão 2 da Lista 1 de FORTRAN.</p>
+
+</div><br>
+
+
+<!-- Questao1.f90 (Fortran básico) -->	
+<div>
+<a href="codigos/questao1.html" title="programa questao1.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+<h3><a href="codigos/questao1.html" title="programa questao1.f90"> questao1.f90</a></h3>
+<p><small>Por <em>Rodolfo Dirack</em> em 19/04/18</small></p>
+<p id="descricao">Resolução da primeira questão da Lista de FORTRAN básico.</p>
+
+</div><br>
+
+
+<!-- Concatena.f90 (Fortran básico) -->	
+<div>
+    <a href="codigos/concatena.html" title="programa concatena.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+    <h3><a href="codigos/concatena.html" title="programa concatena.f90"> concatena.f90</a></h3>
+    <p><small>Por <em>Rodolfo Dirack</em> em 13/04/18</small></p>
+    <p id="descricao">Concatenar dois arquivos.</p>
+</div>
+<br>
+
+<!-- Fortran2shell.f90 (Fortran avançado) -->
+<div>
+    <a href="codigos/fortran2shell.html" title="programa fortran2shell.f90"><img class="thumb" align="left" src="thumbs/fortran_avancado.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+    <h3><a href="codigos/fortran2shell.html" title="programa fortran2shell.f90"> fortran2shell.f90</a></h3>
+    <p><small>Por <em>Rodolfo Dirack</em> em 11/04/18</small></p>
+    <p id="descricao">Como passar argumentos para o programa em FORTRAN pela linha de comandos do Shell.</p>
+
+</div>
+<br>
+
+
+<!-- Media2.f90 (Fortran básico)  -->
+<div>
+    <a href="codigos/media2.html" title="programa media2.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0  class="img-thumbnail rounded-2x" /></a>
+    <h3><a href="codigos/media2.html" title="programa media2.f90"> media2.f90</a></h3>
+    <p><small>Por <em>Caique Carvalho</em> em 11/04/18</small></p>
+    <p id="descricao">Gerar a média aritmética de valores lidos de um arquivo.</p>
+</div>
+<br>
+
+<!-- Lista de exercícios 01 -->
+<div>
+	<a href="codigos/Lista1.zip" download="Lista1.zip" title="Baixar lista 1 de Fortran?"><img class="thumb" align="left" src="thumbs/pdf.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" ></a>
+	<h3><a href="codigos/Lista1.zip" download="Lista1.zip" title="Baixar lista 1 de exercícios em Fortran?"> Lista de exercícios 01</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 07/04/2018</small></p>
+	<p id="descricao">Lista de 15 exercícios de programação básica em Fortran. Comece a praticar!</p>
+</div>
+<br>
+
+<!--Código tipos_funcoes.f90 (FORTRAN avançado) -->
+<div>
+    <a href="codigos/tipos_funcoes.html" title="programa tipos_funcoes.f90"><img class="thumb" align="left" src="thumbs/fortran_avancado.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+    <h3><a href="codigos/tipos_funcoes.html" title="programa tipos_funcoes.f90"> tipos_funcoes.f90</a></h3>
+    <p><small>Por <em>Rodolfo Dirack</em> em 06/04/18</small></p>
+    <p id="descricao">Exemplifica a utilização de funções com tipos derivados.</p>
+</div>
+<br>
+
+<!--Código tipos.f90 (FORTRAN avançado) -->
+<div>
+	<a href="codigos/tipos.html" title="programa tipos.f90"><img class="thumb" align="left" src="thumbs/fortran_avancado.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/tipos.html" title="programa tipos.f90"> tipos.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 06/04/2018</small></p>
+	<p id="descricao">Como usar ponteiros e tipos derivados no Fortran 90.</p>
+</div>
+<br>
+
+
+<!-- Case.f90 (Fortran básico) -->
+<div>
+	<a href="codigos/case.html" title="programa case.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/case.html" title="programa case.f90"> case.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 06/04/2018</small></p>
+	<p id="descricao">Como motar um menu de opções com SELECT CASE no Fortran 90.</p>
+</div>
+<br>
+
+<!-- aula3.f90 (Fortran básico) -->
+<div>
+	<a href="codigos/aula3.html" title="programa aula3.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/aula3.html" title="programa aula3.f90"> aula3.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 27/03/2018</small></p>
+	<p id="descricao">Fornece as raízes de uma equação do segundo grau ax²+bx+c usa blocos if para responder se a equação possui duas raízes reais, uma, ou nenhuma raíz real.</p>
+</div>
+<br>
+
+<!-- cosh.f90 (fortran básico) -->
+<div>
+	<a href="codigos/cosh.html" title="programa cosh.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/cosh.html" title="programa cosh.f90"> cosh.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 27/03/2018</small></p>
+	<p id="descricao">Calcula o cosseno hiperbólico a partir da fórmula exponencial e através da função intrínseca do FORTRAN cosh(x).</p>
+</div>
+<br>
+
+<!-- Livro de Fortran em pdf -->
+<div>
+	<a href="codigos/Fortran.pdf" download="Fortran.pdf" title="Baixar livro Fortran.pdf (9.6MB)?"><img class="thumb" align="left" src="thumbs/livros.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/Fortran.pdf" download="Fortran.pdf" title="Baixar livro Fortran.pdf (9.6MB)?"> Fortran.pdf</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 27/03/2018</small></p>
+	<p id="descricao">Baixe aqui o livro de Stephen J. Chapman, Fortran (Quarta edição, pdf, 9.6MB).</p>
+</div>
+<br>
+
+<!-- quantas_linhas.f90 (Fortran básico) -->
+<div>
+	<a href="codigos/quantas_linhas.html" title="programa quantas_linhas.f90"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/quantas_linhas.html" title="programa quantas_linhas.f90"> Quantas_linhas.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 26/03/2018</small></p>
+	<p id="descricao">Conta o número de linhas de um arquivo que contém uma coluna de números.</p>
+</div>
+<br>
+
+<!-- artigo 1 - movimentando-se pela linha de comando (Shell Script) -->
+<div>
+	<a href="artigos/textos/artigo1.html" title="Ler artigo completo"><img class="thumb" align="left" src="thumbs/linuxpinguim.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="artigos/textos/artigo1.html" title="Ler artigo completo">Movendo-se no linux ubuntu pela linha de comando</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 24/03/2018</small></p>
+	<p id="descricao">Tutorial dos comandos pwd, cd e ls.</p>
+</div>
+<br>
+
+<!-- Runge-Kutta (C++) -->
+<div>
+	<a href="codigos/runge_kutta.html" title="programa runge_kutta.cpp (C++)"><img class="thumbs" align="left" src="thumbs/c++.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+	<h3><a href="codigos/runge_kutta.html" title="programa runge_kutta.cpp (C++)">Runge_kutta.cpp</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 23/03/2018</small></p>
+	<p id="descricao">Programa para solucionar EDO's utilizando o método Runge-Kutta.</p>
+</div>
+<br>
+
+<!-- Aula2.f90 (Fortran básico) -->
+<div>
+	<a href="codigos/aula2.html" title="programa aula 02 (FORTRAN)"><img clas="thumbs" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/aula2.html" title="programa aula 02 (FORTRAN)">Aula2.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 22/03/2018</small></p>
+	<p id="descricao">Conversor de temperatura em graus Fahrenheit para graus Celsius.</p>
+</div>
+<br>
+
+<!-- Aula1.f90 (Fortran básico) -->
+<div>
+	<a href="codigos/aula1.html" title="programa aula 01 (FORTRAN)"><img class="thumb" align="left" src="thumbs/fortran.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/aula1.html" title="programa aula 01 (FORTRAN)">Aula1.f90</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 22/03/2018</small></p>
+	<p id="descricao">Conversor de velocidades de Km/h para m/s.</p>
+</div>
+<br>
+
+<!-- MORSE.SH (Shell Script) -->
+<div>
+	<a href="codigos/morse.html" title="programa morse (shell script)"><img class="thumb" align="left" src="thumbs/shell.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+    <h3><a href="codigos/morse.html" title="programa morse (shell script)">Morse (shell script)</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 16/03/2018</small></p>
+	<p id="descricao">Enviar arquivos por email pela linha de comandos do Shell.</p>
+</div>
+<br>
+
+<!-- JONAS.SH (Shell Script) -->
+<div>
+	<a href="codigos/jonas.html" title="programa jonas (shell script)"><img class="thumb" align="left" src="thumbs/shell.png" alt="Linux user" border=0 class="img-thumbnail rounded-2x" /></a>
+
+	<h3><a href="codigos/jonas.html" title="programa jonas (shell script)">Jonas (shell script)</a></h3>
+	<p><small>Por <em>Rodolfo Dirack</em> em 10/03/2018</small></p>
+	<p id="descricao">Criar atalhos para pastas e comandos personalizados para o Shell.</p>
+</div>
+<br>
+
+</div>
+
+<!-- Rodapé da Página -->
+<div id="rodape">
+&copy; 2018, Rodolfo Dirack. Todos os direitos reservados.
+</div>
+
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/free-website-sign-up?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div></body>
+</html>
