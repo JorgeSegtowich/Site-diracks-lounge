@@ -1,19 +1,21 @@
 /* CSS para tela de computador do Dirack's Lounge
 
     Programador: Rodolfo A. C. Neves 15/04/2018
+
     Email: rodolfo_profissional@hotmail.com
     
     Utilizada nas páginas principais do site, uma coluna principal à
     esquerda e uma barra lateral à direita. 
     
-    Layout exclusivo de index.html:
-    O cabeçalho são três linhas, a primeira com um link à direita (Home Page)
-    a segunda linha é uma barra branca com o logo Dirack's Lounge Let's code
-    e a terceira é uma imagem de um casal de robôs em azul (Banner)
+    Layout de index.html:
+	    O cabeçalho da página são duas divs, a primeira
+	    é uma barra branca com o logo Dirack's Lounge Let's code
+	    e a terceira é uma imagem de um laptop (Banner)
+
+	    O corpo é dividido em duas barras laterais (esquerda e direita)
+	    E um rodapé no final da página.
     
     As outras páginas são variações desse mesmo layout básico
-    
-    Ás páginas de código e artigos utilizarão outra CSS, coluna.css
     
 */
 
